@@ -4,27 +4,22 @@
   <title>FoodBlog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
+  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Nunito' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 	<div id="sidebar">
 		<div id="logo">
 			<%= link_to root_path do %>
-				<%= image_tag "ironcat.png" %>
+				<%= image_tag "ramen.png" %>
 			<% end %>
 		</div>
 		<ul>
-			<li class="category">Website</li>
+			<li class="category"></li>
 			<li><%= link_to "Blog", root_path %></li>
 			<li>About</li>
 		</ul>
-		<ul>
-			<li class="category">Social</li>
-			<li>facebook</li>
-			<li>twitter</li>
-			<li>instagram</li>
-		</ul>
+		
 		<p class="sign_in">Admin Login</p>
 	</div>
 	<div id="main_content">
