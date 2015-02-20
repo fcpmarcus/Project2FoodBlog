@@ -17,7 +17,7 @@
 @import 'normalize';
 
 html, body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nunito';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,7 +61,7 @@ a {
 				text-decoration: none;
 				transition: all .4s ease;
 				&:hover {
-					color: #33acb7;
+					color: red;
 				}
 			}
 		}
@@ -83,14 +83,14 @@ a {
 .button {
 	outline: none;
 	background: transparent;
-	border: 1px solid #d6dce0;
+	border: 1px solid ;
 	padding: .5em 1.5em;
 	border-radius: 1.5em;
 	&:hover {
-		border: 1px solid #33acb7;
-		color: #33acb7;
+		border: 1px solid black;
+		color: red;
 		a {
-			color: #33acb7 !important;
+			color: red !important;
 		}
 	}
 }

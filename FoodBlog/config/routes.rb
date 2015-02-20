@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
 
+  get 'users/index'
+
+  get 'users/new'
+
+  get 'users/create'
+
   resources :posts do
     resources :comments
   end
+
+  get '/about', to: 'pages#about'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
