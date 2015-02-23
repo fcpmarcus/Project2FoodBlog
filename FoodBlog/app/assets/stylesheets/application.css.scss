@@ -21,11 +21,6 @@ html, body {
 
 }
 
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
 #sidebar {
 	width: 180px;
 	position: fixed;
@@ -34,10 +29,10 @@ a {
 	height: 100%;
 	padding: 7em 0 0 0;
 	#logo {
-		width: 40px;
+		width: 60px;
 		position: absolute;
-		top: 40px;
-		left: 90px;
+		top: 10px;
+		left: 40px;
 	}
 	ul {
 		list-style: none;
@@ -100,7 +95,7 @@ a {
 #main_content {
 	margin-left: 250px;
 	#header {
-		padding: 1em 1em;
+		font-size: 64px;
 		color: black;
 		p {
 			display: inline;
@@ -111,9 +106,10 @@ a {
 		}
 		.buttons {
 			float: right;
-			margin-top: -6px;
+			margin-top: -20px;
+			margin-right: 20px;
 			.button {
-				font-size: .8em;
+				font-size: 16px;
 				margin-left: .5em;
 			}
 		}
@@ -200,14 +196,6 @@ a {
 	}
 	#page_wrapper {
 		padding: 3em;
-		#profile_image {
-			width: 300px;
-			float: left;
-			margin-right: 2em;
-			img {
-				width: 100%;
-				border-radius: 0.35em;
-			}
 		}
 		#content {
 			h1 {
@@ -223,7 +211,6 @@ a {
 				text-decoration: none;
 			}
 		}
-	}
 	.links {
 		margin: 2em 0;
 	}
