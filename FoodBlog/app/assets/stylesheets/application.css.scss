@@ -14,15 +14,16 @@
  *= require_self
  */
 
-@import 'normalize';
 
 html, body {
-	font-family: 'Nunito';
+	font-family: 'Slabo 27px', serif;
+	background-image: url(image_path('concrete_seamless.png'));
+
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 500;
-}
+// h1, h2, h3, h4, h5, h6 {
+// 	font-weight: 500;
+// }
 
 a {
 	text-decoration: none;
@@ -35,9 +36,7 @@ a {
 	left: 0;
 	top: 0;
 	height: 100%;
-	background: #F5F5F5;
 	padding: 7em 0 0 0;
-	border-right: 1px solid #d6dce0;
 	#logo {
 		width: 40px;
 		position: absolute;
@@ -57,9 +56,7 @@ a {
 		li {
 			padding: .5em 0;
 			a {
-				color: #9eafba;
-				text-decoration: none;
-				transition: all .4s ease;
+				color: black;
 				&:hover {
 					color: red;
 				}
@@ -76,16 +73,17 @@ a {
 		right: 3em;
 		top: 80%;
 		font-size: .8em;
-		color: #9eafba;
+		color: black;
 	}
 }
 
 .button {
 	outline: none;
 	background: transparent;
-	border: 1px solid ;
+	border: 1px solid black;
 	padding: .5em 1.5em;
 	border-radius: 1.5em;
+	color: black;
 	&:hover {
 		border: 1px solid black;
 		color: red;
@@ -106,10 +104,9 @@ a {
 #main_content {
 	margin-left: 250px;
 	#header {
-		padding: 1em 3em;
-		border-bottom: 1px solid #d6dce0;
-		background: #f5f7f9;
-		color: #9eafba;
+		padding: 1em 1em;
+		// border-bottom: 1px solid #d6dce0;
+		color: black;
 		p {
 			display: inline;
 		}
@@ -235,7 +232,7 @@ a {
 	.links {
 		margin: 2em 0;
 	}
-	input[type="text"], input[type="email"], input[type="password"], textarea {
+	input[type="text"], textarea {
 		width: 90%;
 		border: 1px solid #d6dce0;
 		border-radius: .35em;
@@ -247,7 +244,7 @@ a {
 		height: 35px;
 	}
 	textarea {
-		min-height: 180px;
+		min-height: 150px;
 	}
 	input[type="submit"] {
 		outline: none;

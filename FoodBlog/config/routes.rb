@@ -1,16 +1,15 @@
 Rails.application.routes.draw do
 
-  get 'users/index'
+  # delete '/sessions' => 'sessions#destroy', as: 'logout'
+  get '/sessions' => 'sessions#destroy', as: 'logout'
 
-  get 'users/new'
+  resources :sessions, only: [:new, :create]
 
-  get 'users/create'
+  resources :users, only: [:new, :create, :show]
 
   resources :posts do
     resources :comments
   end
-
-  get '/about', to: 'pages#about'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

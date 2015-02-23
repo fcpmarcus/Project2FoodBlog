@@ -1,4 +1,6 @@
-def index
+class UsersController < ApplicationController
+
+  def index
   	@users = User.all
   end
 
@@ -7,17 +9,21 @@ def index
   end
 
   def create
-  	user = User.new(params.require(:user).permit(:email, :password, :password_confirmation))
+  	user = User.new(user_params)
   	if user.save
-  		session["user_id"] = user.id.to_s
-      PageMailer.visit_happened("person").deliver
+  		session['user_id'] = user.id
+      # PageMailer.visit_happened("person").deliver
   		redirect_to posts_path
   	else
       redirect_to new_user_path
     end
   end
 
+  def show
+    @user = User.find(session['user_id'])
+  end
+
   def user_params
-    params.require(:user).permit(:email, :avatar)
+    params.require(:user).permit(:email, :password, :password_confirmation, :avatar)
   end
 end

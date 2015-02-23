@@ -10,7 +10,6 @@ class CommentsController < ApplicationController
 		@post = Post.find(params[:post_id])
 		@comment = @post.comments.find(params[:id])
 		@comment.destroy
-		redirect_to post_path(@post)
+		redirect_to root_path
 	end
-
 end
